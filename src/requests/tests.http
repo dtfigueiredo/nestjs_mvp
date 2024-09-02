@@ -1,0 +1,29 @@
+### GET USER BY ID
+get http://localhost:3000/user/id/bc1e6313-2863-4883-aabf-9df717100f7d
+
+### GET USER BY EMAIL
+get http://localhost:3000/user/email/testeNest2@teste.com
+
+### GET USERSLIST
+get http://localhost:3000/user/userslist
+
+### CREATE USER
+post http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "name": "Sandro Favorato",
+  "email": "testeNest2@teste.com"
+}
+
+### UPDATE USER
+put http://localhost:3000/user/bc1e6313-2863-4883-aabf-9df717100f7d
+Content-Type: application/json
+
+{
+  "name": "Sandro Favorato",
+  "email": "testeNest2@teste.com"
+}
+
+### DELETE USER
+delete http://localhost:3000/user/0a96c695-7a5b-4d39-aa1b-a2644cdc584e
